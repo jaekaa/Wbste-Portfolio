@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Ellaine Josmer <span>Lumague</span></h1>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">
+                <i data-lucide="moon"></i>
+            </button>
+        </header>
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="profile">
+                    <img src="./img/profile.jpg" alt="Ellaine Josmer Lumague" class="profile-image">
+                    <h2>Ellaine Josmer Lumague</h2>
+                    <p>Psychology</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ella.neiny11" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://www.instagram.com/ellaneiny" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+                <div class="contact-info">
+                    <div>
+                        <i data-lucide="phone"></i>
+                        <span>+254723909353</span>
+                    </div>
+                    <div>
+                        <i data-lucide="mail"></i>
+                        <span>ellajosmer1ne11@gmail.com</span>
+                    </div>
+                    <div>
+                        <i data-lucide="map-pin"></i>
+                        <span>Baguio City</span>
+                    </div>
+                </div>
+                <a href="#" download class="download-resume">
+                    <i data-lucide="download"></i> Download Resume
+                </a>
+            </aside>
+
+            <!-- Main Content -->
+            <main>
+                <nav class="tab-navigation">
+                    <button class="nav-button active" data-tab="home">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </button>
+                    <button class="nav-button" data-tab="resume">
+                        <i data-lucide="file-text"></i>
+                        <span>Resume</span>
+                    </button>
+                    <button class="nav-button" data-tab="work">
+                        <i data-lucide="star"></i>
+                        <span>Experiences</span>
+                    </button>
+                    <button class="nav-button" data-tab="contact">
+                        <i data-lucide="user"></i>
+                        <span>Contact</span>
+                    </button>
+                </nav>
+
+                <div class="tab-content">
+                    <!-- Home Tab -->
+                    <section id="home" class="tab-pane active">
+                        <h2>ABOUT ME</h2>
+                        <p class="about-text">
+                            Salutations! I am a psychology student at the University of Baguio, deeply passionate about 
+                            understanding human behavior and the complexities of the mind. My academic journey has led me 
+                            to explore various aspects of psychology, from cognitive processes to the intricate dynamics 
+                            of social interactions. I am committed to continuous learning and aspire to make a meaningful 
+                            impact by applying psychological principles in real-world settings. My curiosity drives me to 
+                            engage with emerging research and methodologies, aiming to expand my knowledge and contribute 
+                            positively to the field of psychology.
+                        </p>
+                        <h3>What I do!</h3>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <i data-lucide="tv"></i>
+                                <h4>Watch</h4>
+                                <p> 
+                                    I love immersing myself in movies, anime, and documentaries; they’re my escape 
+                                    and a source of creative inspiration.
+                                </p>
+                            </div>
+                            <div class="service-card">
+                                <i data-lucide="camera"></i>
+                                <h4>Photography</h4>
+                                <p> 
+                                    Capturing moments through my lens excites me, whether it’s vibrant landscapes, 
+                                    candid portraits, or urban scenes.
+                                </p>                            
+                            </div>
+                            <div class="service-card">
+                                <i data-lucide="brush"></i>
+                                <h4>Drawing</h4>
+                                <p> 
+                                    I recently started drawing to bring my ideas to life, focusing on both sketching 
+                                    and digital art to express my creativity.
+                                </p>                            
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Resume Tab -->
+                    <section id="resume" class="tab-pane">
+                        <div class="resume-section">
+                            <h3>Education</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="date">2024 - Present</div>
+                                    <h4>Bachelor of Science in Psychology</h4>
+                                    <p>University of Baguio</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="date">2022 - 2024</div>
+                                    <h4>Senior High School</h4>
+                                    <p>University of Cordilleras</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3>Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4>Technical Skills</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Research Methods</span>
+                                        <span class="skill-tag">Psychometric Testing</span>
+                                        <span class="skill-tag">Behavioral Observation</span>
+                                        <span class="skill-tag">Cognitive Behavioral</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Soft Skills</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Communication</span>
+                                        <span class="skill-tag">Critical Thinking</span>
+                                        <span class="skill-tag">Empathy</span>
+                                        <span class="skill-tag">Problem Solving</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Work Tab -->
+                    <section id="work" class="tab-pane">
+                        <div class="portfolio-filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="work">Work</button>
+                            <button class="filter-btn" data-filter="academic">Academic</button>
+                        </div>
+                        <div class="portfolio-grid">
+                            <!-- Experiences -->
+                            <div class="portfolio-item" data-category="work">
+                                <img src="./img/barista.png" alt="Project 1">
+                                <div class="portfolio-info">
+                                    <h4>Experiences</h4>
+                                    <p>Barista</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item" data-category="work">
+                                <img src="./img/makeup.png" alt="Project 2">
+                                <div class="portfolio-info">
+                                    <h4>Experiences</h4>
+                                    <p>Makeup</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item" data-category="work">
+                                <img src="./img/karate.png" alt="Project 3">
+                                <div class="portfolio-info">
+                                    <h4>Experiences</h4>
+                                    <p>Karate</p>
+                                </div>
+                            </div>
+                    
+                            <!-- Clinical -->
+                            <div class="portfolio-item" data-category="academic">
+                                <img src="./img/research.png" alt="Project 4">
+                                <div class="portfolio-info">
+                                    <h4>Academic</h4>
+                                    <p>Research</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item" data-category="academic">
+                                <img src="./img/debate.png" alt="Project 5">
+                                <div class="portfolio-info">
+                                    <h4>Academic</h4>
+                                    <p>Debates</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item" data-category="academic">
+                                <img src="./img/laboratory.png" alt="Project 5">
+                                <div class="portfolio-info">
+                                    <h4>Academic</h4>
+                                    <p>Laboratory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Tab -->
+                    <section id="contact" class="tab-pane">
+                        <div class="contact-grid">
+                            <div class="contact-information">
+                                <h3>Contact Information</h3>
+                                <p>Feel free to reach out for collaborations, research opportunities, or just to connect!</p>
+                            </div>
+                            <div class="contact-form">
+                                <h3>Get in Touch</h3>
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
